@@ -5,3 +5,9 @@
     text-decoration: none;
     border: none;
 }
+
+@import "tailwindcss";
+
+.font-manrope {
+  font-family: 'Manrope', sans-serif;
+}

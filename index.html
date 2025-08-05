@@ -1,13 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Course Funnel</title>
-    <link rel="stylesheet" href="/src/styles/reset.css">
-    <link href="./output.css" rel="stylesheet">
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="/src/styles/reset.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="font-manrope">
+    <main
+      class="bg-[url(/src/assets/images/background-main.svg)] px-[345px] pt-[60px]"
+    >
+      <div class="">
+        <div class="flex items-center justify-between">
+          <img src="/src/assets/images/logo.svg" alt="Logo da Empresa" />
+          <div class="flex items-center gap-[11px]">
+            <img
+              src="/src/assets/images/email-logo.svg"
+              alt="Ícone do email."
+            />
+            <p class="text-white">support@yourbrand.com</p>
+          </div>
+        </div>
+        <div class="flex pt-[90px] gap-[76px] justify-between">
+          <div class="w-[554px] text-white flex gap-4 flex-col">
+            <h1 class="font-bold text-6xl leading-[80px]">
+              Learn This Skill & Get This Outcome
+            </h1>
+            <p class="font-light text-[22px] leading-[40px]">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit malesuada
+              et libero scelerisque pellentesque.
+            </p>
+            <button
+              type="button"
+              class="w-[315px] h-[76px] bg-gradient-to-r from-[#FF7A00] to-[#FF0000] font-semibold text-[26px]"
+            >
+              Learn more
+            </button>
+          </div>
+          <aside class="flex flex-col gap-3">
+            <div class="">
+              <h6
+                class="font-bold text-lg text-white leading-10 text-center w-[600px] h-[41px] bg-[#3732F8]"
+              >
+                WATCH THIS VIDEO FIRST! (SOUND ON!)
+              </h6>
+              <div
+                id="video-thumbnail"
+                class="relative w-[600px] h-[338px] bg-[#243349] flex items-center justify-center cursor-pointer overflow-hidden shadow-xl"
+              >
+                <img
+                  src="/src/assets/images/icon-play.svg"
+                  alt="Play"
+                  class="w-20 h-20 z-10"
+                />
+                <video
+                  id="main-video"
+                  src="#"
+                  class="absolute inset-0 w-full h-full hidden"
+                  controls
+                ></video>
+              </div>
+            </div>
+            <p
+              class="font-light text-[#8496AD] text-[22px] text-center pb-[102px]"
+            >
+              -- Name here, CEO of Brand Name
+            </p>
+          </aside>
+        </div>
+      </div>
+    </main>
+    <script src="/src/scripts/index.js"></script>
+  </body>
 </html>
