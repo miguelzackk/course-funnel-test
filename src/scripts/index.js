@@ -1,9 +1,9 @@
-document
-        .getElementById("video-thumbnail")
-        .addEventListener("click", function () {
-          const video = document.getElementById("main-video");
-          video.classList.remove("hidden");
-          video.play();
-          this.querySelector("img").style.display = "none";
-          this.style.cursor = "default";
-        });
+document.querySelectorAll('.video-thumbnail').forEach(function(thumbnail) {
+  thumbnail.addEventListener("click", function () {
+    const video = this.querySelector("video");
+    video.classList.remove("hidden");
+    video.play();
+    this.querySelector("img").style.display = "none";
+    this.style.cursor = "default";
+  });
+});
